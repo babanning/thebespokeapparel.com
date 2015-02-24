@@ -68,6 +68,43 @@ body {
   color: white;
   background: rgba(0, 0, 0, 0.25); }
 
+.cell-group {
+  position: relative; }
+  .cell-group .cell {
+    display: inline-block;
+    width: 33%;
+    padding: 10px;
+    min-width: 250px; }
+    .cell-group .cell img {
+      width: 100%; }
+  .cell-group .cell-arrows {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    height: 66px;
+    transform: translateY(-50%); }
+    .cell-group .cell-arrows .arrow-right, .cell-group .cell-arrows .arrow-left {
+      position: absolute;
+      top: 0; }
+    .cell-group .cell-arrows .arrow-left {
+      left: -76px; }
+    .cell-group .cell-arrows .arrow-right {
+      right: -76px; }
+
+.cell-controller {
+  padding: 2.5em 0; }
+  .cell-controller .cell-circle {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border: 4px solid #C35050;
+    background: #C35050;
+    border-radius: 50%;
+    margin: 0 5px; }
+    .cell-controller .cell-circle.active {
+      background: transparent; }
+
 /* SPECIFIC SECTIONS */
 .vid-block {
   position: relative; }

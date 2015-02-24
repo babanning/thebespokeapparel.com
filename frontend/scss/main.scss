@@ -83,6 +83,50 @@ body {
 	background: rgba(black, 0.25);
 }
 
+.cell-group {
+	position:relative;
+	.cell {
+	    display:inline-block;
+	    width:33%;
+	    padding:10px;
+	    min-width:250px;
+	    img {
+	      width:100%;
+	    }
+	}
+	.cell-arrows {
+		$arrow-height: 66px;
+		position:absolute;
+		width:100%;
+		left:0;
+		top:50%;
+		height:66px;
+		transform:translateY(-50%);
+
+		.arrow-right,
+		.arrow-left {
+			position:absolute;
+			top:0;
+		}
+		.arrow-left {left: -$arrow-height - 10px;}
+		.arrow-right {right: -$arrow-height - 10px;}
+	}
+}
+.cell-controller {
+	padding:2.5em 0;
+	.cell-circle {
+		display:inline-block;
+		width:25px;
+		height:25px;
+		border:4px solid $red;
+		background:$red;
+		border-radius:50%;
+		margin:0 5px;
+		&.active {
+			background:transparent;
+		}
+	}
+}
 
 
 /* SPECIFIC SECTIONS */
