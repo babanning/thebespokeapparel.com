@@ -90,8 +90,9 @@ body {
 	border-radius:6px;
 	padding:20px;
 	color:$gray;
+	min-height:450px; //This will probably change
 	box-shadow: 0px 1px 3px 0px rgba(6,16,48,0.20);
-	.serv-illustration {
+	img {
 		border:1px solid darken(#d8d8d8,12%);
 	}
 	.profile-name {
@@ -99,11 +100,14 @@ body {
 		border-bottom:1px solid $site-bg;
 		padding-bottom:0.5em;
 	}
+	.serv-list {
+		padding-left:0;
+		li {
+			list-style-type: none;
+		}
+	}
 }
 
-/* SPECIFIC SECTIONS */
-
-/* product slider */
 .cell-group {
 	position:relative;
 	font-size:0;
@@ -117,6 +121,14 @@ body {
 	      width:100%;
 	    }
 	}
+	&.cell-group-half {
+		.cell {
+			width:50%;
+		}
+	}
+
+
+
 	.cell-arrows {
 		$arrow-height: 66px;
 		position:absolute;
@@ -133,6 +145,11 @@ body {
 		}
 		.arrow-left {left: -$arrow-height - 10px;}
 		.arrow-right {right: -$arrow-height - 10px;}
+	}
+	&.align-top {
+		.cell {
+			vertical-align:top;
+		}
 	}
 }
 .cell-controller {
@@ -151,9 +168,11 @@ body {
 	}
 }
 
+/* SPECIFIC SECTIONS */
 
 .vid-block {
 	position:relative;
+	
 	.abs {
 		position:absolute;
 		left:0;
@@ -172,6 +191,19 @@ body {
 .vid-img {
 	display:block;
 	width:100%;
+}
+
+.testimonial-slide {
+	color:white;
+	text-shadow:1px 2px rgba(6,16,48,0.20);
+	.quote-content {
+		font-size:2.7em;
+		margin-bottom:0.4em;
+	}
+	.quote-author {
+		margin-top:0;
+		font-size:1.3em;
+	}
 }
 
 
