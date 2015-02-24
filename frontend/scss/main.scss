@@ -7,12 +7,14 @@ $gray: #7a7977;
 $site-bg: $cream;
 $lead-copy: $gray;
 
+$font-size: 16px;
+
 body {
     background: $site-bg;
     margin:0;
     padding:0;
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
+    font-size: $font-size;
 }
 
 /* STRUCTURE */
@@ -83,9 +85,30 @@ body {
 	background: rgba(black, 0.25);
 }
 
+.serv-card {
+	background:white;
+	border-radius:6px;
+	padding:20px;
+	color:$gray;
+	box-shadow: 0px 1px 3px 0px rgba(6,16,48,0.20);
+	.serv-illustration {
+		border:1px solid darken(#d8d8d8,12%);
+	}
+	.profile-name {
+		color:$red;
+		border-bottom:1px solid $site-bg;
+		padding-bottom:0.5em;
+	}
+}
+
+/* SPECIFIC SECTIONS */
+
+/* product slider */
 .cell-group {
 	position:relative;
+	font-size:0;
 	.cell {
+		font-size:$font-size;
 	    display:inline-block;
 	    width:33%;
 	    padding:10px;
@@ -129,7 +152,6 @@ body {
 }
 
 
-/* SPECIFIC SECTIONS */
 .vid-block {
 	position:relative;
 	.abs {
@@ -140,6 +162,11 @@ body {
 		width:100%;
 		text-align:center;
 	}
+}
+
+.section.what-we-do {
+	background: url('/images/what-we-do.png');
+	background-size:cover;
 }
 
 .vid-img {
