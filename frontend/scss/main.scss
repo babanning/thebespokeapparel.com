@@ -73,16 +73,27 @@ body {
 	font-size: 3em;
 }
 
+.button,
 .hollow-button {
 	text-transform: uppercase;
-	border: 4px solid white;
 	padding: 1.2em 0;
 	display: block;
 	text-align: center;
 	width:250px;
 	text-decoration: none;
+	background:$red;
 	color:white;
+	transition:background 0.2s;
+	&:hover {
+		background:darken($red,8%);
+	}
+}
+.button.hollow-button {
+	border: 4px solid white;
 	background: rgba(black, 0.25);
+	&:hover {
+		background: rgba(black, 0.4);	
+	}
 }
 
 .serv-card {
@@ -168,6 +179,30 @@ body {
 	}
 }
 
+.form {
+	color:$lead-copy;
+	textarea,
+	input[type="text"] {
+		font-size:1.1em;
+		$field-bg: #d8d8d8;
+		width:100%;
+		background:$field-bg;
+		outline:0;
+		border:1px solid $gray;
+		padding:8px 10px;
+	}
+	input[type="text"] {
+		//padding:8px 10px;
+	}
+	label {
+		display:block;
+		margin-bottom:0.3em;
+	}
+	.row {
+		margin-bottom:1em;
+	}
+}
+
 /* SPECIFIC SECTIONS */
 
 .vid-block {
@@ -206,6 +241,14 @@ body {
 	}
 }
 
+.contact-us {
+	.form-cell {
+		padding:0 5% 0 10%;
+	}
+	.illustration-cell {
+		padding:40px 10% 0 5%;
+	}
+}
 
 
 
