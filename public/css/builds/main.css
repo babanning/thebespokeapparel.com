@@ -11,11 +11,15 @@ body {
 
 /* STRUCTURE */
 .section {
-  padding: 4em 0; }
+  padding: 4em 0;
+  background: #ebe4e0; }
 
 .wrap {
   max-width: 1000px;
   margin: 0 auto; }
+
+.page {
+  margin-bottom: 200px; }
 
 .right-content {
   width: 50%;
@@ -185,3 +189,16 @@ body {
   padding: 0 5% 0 10%; }
 .contact-us .illustration-cell {
   padding: 40px 10% 0 5%; }
+
+/* Fancy Fixed Footer */
+.footer {
+  background: #333;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 200px; }
+  .footer .wrap {
+    padding-top: 70px; }
