@@ -8,7 +8,7 @@ gulp.task('s', function() {
         server: {
             baseDir: "./public"
         },
-        files: ['public/css/builds/**'],
+        files: ['public/index.html', 'public/css/builds/**'],
         ghostMode: false
     });
 });

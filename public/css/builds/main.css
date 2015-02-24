@@ -3,47 +3,59 @@
 
 /* variables */
 body {
-  background: white;
+  background: #ebe4e0;
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px; }
 
+/* STRUCTURE */
+.section {
+  padding: 4em 0; }
+
 .wrap {
   max-width: 1000px;
   margin: 0 auto; }
 
-.vid-block {
-  position: relative; }
-  .vid-block .abs {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-    text-align: center; }
+.right-content {
+  width: 50%;
+  float: right;
+  position: relative;
+  left: -40px; }
+
+/* TYPOGRAPHY */
+.center {
+  text-align: center; }
+
+.lead {
+  color: #7a7977;
+  font-size: 1.6em;
+  line-height: 1.6em;
+  margin-top: 0px; }
+
+.choke {
+  max-width: 660px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.headline {
+  color: white;
+  text-transform: uppercase;
+  font-size: 3em;
+  margin-bottom: 20px; }
+  .headline.red {
+    color: #C35050; }
+
+/* COMPONENTS */
+.needle {
+  margin: 0 auto;
+  display: block; }
 
 #slogan {
   margin: 0;
   margin-bottom: 0.5em;
   text-align: left;
   font-size: 3em; }
-
-.right-cont {
-  width: 50%;
-  float: right;
-  position: relative;
-  left: -40px; }
-
-.vid-img {
-  display: block;
-  width: 100%; }
-
-.headline {
-  color: white;
-  text-transform: uppercase; }
-  .headline.red {
-    color: #C35050; }
 
 .hollow-button {
   text-transform: uppercase;
@@ -55,3 +67,18 @@ body {
   text-decoration: none;
   color: white;
   background: rgba(0, 0, 0, 0.25); }
+
+/* SPECIFIC SECTIONS */
+.vid-block {
+  position: relative; }
+  .vid-block .abs {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center; }
+
+.vid-img {
+  display: block;
+  width: 100%; }
