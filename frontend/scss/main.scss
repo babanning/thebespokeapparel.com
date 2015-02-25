@@ -186,6 +186,7 @@ body {
 .form {
 	color:$lead-copy;
 	textarea,
+	input[type="email"],
 	input[type="text"] {
 		font-size:1.1em;
 		$field-bg: #d8d8d8;
@@ -195,9 +196,6 @@ body {
 		border:1px solid $gray;
 		padding:8px 10px;
 	}
-	input[type="text"] {
-		//padding:8px 10px;
-	}
 	label {
 		display:block;
 		margin-bottom:0.3em;
@@ -205,7 +203,19 @@ body {
 	.row {
 		margin-bottom:1em;
 	}
+	br {
+		/* Contact Form 7 injects <br> tags. grrrr */
+		display:none;
+	}
+	.contactform-submit-button {
+		font-size:1em;
+		border:none;
+		&:hover {
+			cursor:pointer;
+		}
+	}
 }
+.wpcf7-validation-errors { display:none !important; }
 
 /* SPECIFIC SECTIONS */
 

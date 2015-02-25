@@ -1,0 +1,15 @@
+<div class="form">
+<div class="row">
+<label>Name (required)</label>
+    [text* your-name]
+</div>
+<div class="row">
+<label>Email (required)</label>
+    [email* your-email]
+</div>
+<div class="row">
+<label>Your Message</label>
+    [textarea your-message]
+</div>
+<p>[submit class:button class:contactform-submit-button "Submit"]</p>
+</div>

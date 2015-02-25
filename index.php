@@ -116,21 +116,7 @@
         </div>
         <div class="wrap cell-group cell-group-half align-top">
             <div class="cell form-cell">
-                <form id="contact_form" class="form" action="#" method="POST" enctype="multipart/form-data">
-                    <div class="row">
-                        <label for="name">Name</label>
-                        <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
-                    </div>
-                    <div class="row">
-                        <label for="email">Email</label>
-                        <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
-                    </div>
-                    <div class="row">
-                        <label for="message">Your message</label>
-                        <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br           />
-                    </div>
-                    <a href="#" class="button" value="Send email">Submit</a>
-                </form> 
+                <?php echo do_shortcode('[contact-form-7 id="13" title="Home Contact Form"]'); ?>
             </div>
             <div class="cell illustration-cell">
                 <img src="/wp-content/themes/thebespokeapparel-child/images/phone.png" />
