@@ -5,9 +5,7 @@ var browserSync = require('browser-sync');
 /* SERVER */
 gulp.task('s', function() {
     browserSync({
-        server: {
-            baseDir: "./public"
-        },
+        proxy: 'http://thebespokeapparel.dev/',
         files: ['index.php', 'css/builds/**'],
         ghostMode: false
     });
