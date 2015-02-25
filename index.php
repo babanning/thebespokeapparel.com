@@ -1,5 +1,151 @@
 <?php get_header(); ?>
-<div>BUAHAHAHAHAHAHAAH</div>
+
+<div class="page">
+    <div class="vid-block">
+        <img class="vid-img" src="/wp-content/themes/thebespokeapparel-child/images/intro-block-bg-img.png">
+        <div class="abs">
+            <div class="right-content">
+            <h1 class="headline" id="slogan">Master the Unspoken Word.</h1>
+            <a href="#" onclick="return false" class="button hollow-button">watch the video</a>
+          </div>
+        </div>
+    </div>
+
+    <div class="section products-block">
+        <img class="needle" src="/wp-content/themes/thebespokeapparel-child/images/needle.png" />
+        <div class="wrap center">
+            <h2 class="headline red">Our Products</h2>
+            <p class="lead choke">Sure, we make suits. . . We also have everything that makes an amazing suit perfect.  </p>
+            <div class="cell-group">
+                <div class="cell"><img src="http://placehold.it/500x333/bababa"></div>
+                <div class="cell"><img src="http://placehold.it/500x333/bababa"></div>
+                <div class="cell"><img src="http://placehold.it/500x333/bababa"></div>
+                <div class="cell"><img src="http://placehold.it/500x333/bababa"></div>
+                <div class="cell"><img src="http://placehold.it/500x333/bababa"></div>
+                <div class="cell"><img src="http://placehold.it/500x333/bababa"></div>
+                <div class="cell-arrows">
+                    <a href="#" onclick="return false" class="cell-arrow arrow-left"><img src="/wp-content/themes/thebespokeapparel-child/images/ui/arrow-PLACEHOLDER-L.png"></a>
+                    <a href="#" onclick="return false" class="cell-arrow arrow-right"><img src="/wp-content/themes/thebespokeapparel-child/images/ui/arrow-PLACEHOLDER-R.png"></a>
+                </div>
+            </div>
+            <div class="cell-controller">
+                <span class="cell-circle active"></span>
+                <span class="cell-circle"></span>
+                <span class="cell-circle"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="section what-we-do">
+        <h2 class="headline center">What We Do</h2>
+        <div class="wrap center cell-group align-top">
+            <div class="cell">
+                <div class="serv-card">
+                    <img src="http://placehold.it/500x333/d8d8d8" class="serv-illustration">
+                    <h2 class="profile-name">Custom Tailoring</h2>
+                    <ul class="serv-list">
+                        <li>service number one</li>
+                        <li>service number two</li>
+                        <li>service number three</li>
+                        <li>service number four</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cell">
+                <div class="serv-card">
+                    <img src="http://placehold.it/500x333/d8d8d8" class="serv-illustration">
+                    <h2 class="profile-name">Alterations</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor  incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+                </div>
+            </div>
+            <div class="cell">
+                <div class="serv-card">
+                    <img src="http://placehold.it/500x333/d8d8d8" class="serv-illustration">
+                    <h2 class="profile-name">Image Consulation</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor  incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+                </div>
+            </div>
+        </div>
+        <!-- <img class="bg-image" src="/wp-content/themes/thebespokeapparel-child/images/what-we-do.png" /> -->
+    </div>
+
+    <div class="section who-we-are">
+        <img class="needle" src="/wp-content/themes/thebespokeapparel-child/images/needle.png" />
+        <div class="wrap center">
+            <h2 class="headline red">Who We Are</h2>
+            <p class="lead choke">Don&rsquo;t settle for less than perfection. We’ll give you a suit that is one of a kind, made just for you.</p>
+
+            <div class="cell-group cell-group-half">
+                <div class="profile-card cell">
+                    <div class="serv-card">
+                        <img src="http://placehold.it/500x333/d8d8d8" alt="David Corbitt">
+                        <h2 class="profile-name">David Corbitt</h2>
+                        <h3 class="profile-title">Founder</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor  incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+                    </div>
+                </div>
+                <div class="profile-card cell">
+                    <div class="serv-card">
+                        <img src="http://placehold.it/500x333/d8d8d8" alt="Dani Corbitt">
+                        <h2 class="profile-name">Dani Corbitt</h2>
+                        <h3 class="profile-title">Manager of Operations</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor  incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="testimonials vid-block">
+        <!--This structure might need to change because of slider behavior -->
+        <img class="vid-img" src="/wp-content/themes/thebespokeapparel-child/images/intro-block-bg-img-invert.png">
+        <div class="abs">
+            <div class="testimonial-slide">
+                <h4 class="quote-content">"Bespoke is simply the greatest."</h4>
+                <h4 class="quote-author">- Muhammad Ali</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="section contact-us">
+        <img class="needle" src="/wp-content/themes/thebespokeapparel-child/images/needle.png" />
+        <div class="wrap center">
+            <h2 class="headline red">Contact Us</h2>
+            <p class="lead choke">Let’s see what we can do for you. Email or call us to get started on the path to lifechanging clothing.</p>
+        </div>
+        <div class="wrap cell-group cell-group-half align-top">
+            <div class="cell form-cell">
+                <form id="contact_form" class="form" action="#" method="POST" enctype="multipart/form-data">
+                    <div class="row">
+                        <label for="name">Name</label>
+                        <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+                    </div>
+                    <div class="row">
+                        <label for="email">Email</label>
+                        <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+                    </div>
+                    <div class="row">
+                        <label for="message">Your message</label>
+                        <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br           />
+                    </div>
+                    <a href="#" class="button" value="Send email">Submit</a>
+                </form> 
+            </div>
+            <div class="cell illustration-cell">
+                <img src="/wp-content/themes/thebespokeapparel-child/images/phone.png" />
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="wrap">
+    <p>Lorem ipsum Non aliqua aute Ut ea magna dolore sunt id sed amet officia Excepteur ad Ut ea tempor cillum tempor sunt Ut Duis reprehenderit ullamco Excepteur id non officia nisi adipisicing consequat ad fugiat do incididunt.</p>
+    </div>
+</div>
+
+
+
 
 <div class="all-products">
 <?php
@@ -17,10 +163,5 @@
 </div>
 
 
-<section id="content" role="main">
-    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-    <?php get_template_part( 'entry' ); ?>
-    <?php endwhile; endif; ?>
-    <?php get_template_part( 'nav', 'below' ); ?>
-</section>
+
 <!--<?php get_footer(); ?>-->
