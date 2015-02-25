@@ -8,7 +8,7 @@ gulp.task('s', function() {
         server: {
             baseDir: "./public"
         },
-        files: ['public/index.html', 'public/css/builds/**'],
+        files: ['index.php', 'css/builds/**'],
         ghostMode: false
     });
 });
@@ -16,7 +16,7 @@ gulp.task('s', function() {
 gulp.task('sass', function () {
     gulp.src('frontend/scss/main.scss')
         .pipe(sass())
-        .pipe(gulp.dest('public/css/builds'));
+        .pipe(gulp.dest('css/builds'));
 });
 
 gulp.task('build', ['sass']);
