@@ -16,6 +16,10 @@
         <div class="wrap center">
             <h2 class="headline red">Our Products</h2>
             <p class="lead choke">Sure, we make suits. . . We also have everything that makes an amazing suit perfect.  </p>
+        </div>
+    </div>
+    <div class="section product-slide-frame">
+            
             <div class="cell-group">
                 <div class="cell"><img src="http://placehold.it/500x333/bababa"></div>
                 <div class="cell"><img src="http://placehold.it/500x333/bababa"></div>
@@ -33,7 +37,6 @@
                 <span class="cell-circle"></span>
                 <span class="cell-circle"></span>
             </div>
-        </div>
     </div>
 
     <div class="section what-we-do">
@@ -149,5 +152,5 @@
 </div>
 
 
-
-<!--<?php get_footer(); ?>-->
+<script src="/wp-content/themes/thebespokeapparel-child/js/bespoke.js"></script>
+<?php get_footer(); ?>
