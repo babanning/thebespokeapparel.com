@@ -11,34 +11,37 @@
         </div>
     </div>
 
-    <div class="section products-block">
+    <div class="section products-block no-bottom-pad">
         <img class="needle" src="/wp-content/themes/thebespokeapparel-child/images/needle.png" />
         <div class="wrap center">
             <h2 class="headline red">Our Products</h2>
             <p class="lead choke">Sure, we make suits. . . We also have everything that makes an amazing suit perfect.  </p>
         </div>
     </div>
-    <div class="section product-slide-frame">
-            
+    <div class="section js-product-slide-frame">
             <div class="cell-group">
-                <div class="cell"><img src="http://placehold.it/500x333/bababa"></div>
-                <div class="cell"><img src="http://placehold.it/500x333/bababa"></div>
-                <div class="cell"><img src="http://placehold.it/500x333/bababa"></div>
-                <div class="cell"><img src="http://placehold.it/500x333/bababa"></div>
-                <div class="cell"><img src="http://placehold.it/500x333/bababa"></div>
-                <div class="cell"><img src="http://placehold.it/500x333/bababa"></div>
-                <div class="cell-arrows">
-                    <a href="#" onclick="return false" class="cell-arrow arrow-left"><img src="/wp-content/themes/thebespokeapparel-child/images/ui/arrow-PLACEHOLDER-L.png"></a>
-                    <a href="#" onclick="return false" class="cell-arrow arrow-right"><img src="/wp-content/themes/thebespokeapparel-child/images/ui/arrow-PLACEHOLDER-R.png"></a>
+                <div class="wrap">
+                    <div class="cell"><img src="http://placehold.it/500x333/bababa"></div>
+                    <div class="cell"><img src="http://placehold.it/500x333/bababa"></div>
+                    <div class="cell"><img src="http://placehold.it/500x333/bababa"></div>
+                    <div class="cell"><img src="http://placehold.it/500x333/bababa"></div>
+                    <div class="cell"><img src="http://placehold.it/500x333/bababa"></div>
+                    <div class="cell"><img src="http://placehold.it/500x333/bababa"></div>
                 </div>
             </div>
-            <div class="cell-controller">
-                <span class="cell-circle active"></span>
-                <span class="cell-circle"></span>
-                <span class="cell-circle"></span>
+            <div class="cell-group">
+                <div class="wrap">
+                    <div class="cell"><img src="http://placehold.it/500x333/333333"></div>
+                    <div class="cell"><img src="http://placehold.it/500x333/333333"></div>
+                    <div class="cell"><img src="http://placehold.it/500x333/333333"></div>
+                    <div class="cell"><img src="http://placehold.it/500x333/333333"></div>
+                    <div class="cell"><img src="http://placehold.it/500x333/333333"></div>
+                    <div class="cell"><img src="http://placehold.it/500x333/333333"></div>
+                </div>
             </div>
-    </div>
-
+        </div>
+        <div class="section cell-controller center">
+        </div>
     <div class="section what-we-do">
         <h2 class="headline center">What We Do</h2>
         <div class="wrap center cell-group align-top">

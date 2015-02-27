@@ -113,10 +113,10 @@ var Slider = function(options) {
 }
 
 new Slider({
-    thumbClasses:"slide-circle",
-    parent:$('.frame'),
-    child:$('.slide'),
-    thumbContainer:$('.frame-controls'),
+    thumbClasses:"cell-circle",
+    parent:$('.js-product-slide-frame'),
+    child:$('.cell-group'),
+    thumbContainer:$('.cell-controller'),
     prevBtn:$('.js-btn-prev'),
     nextBtn:$('.js-btn-next')
 });
