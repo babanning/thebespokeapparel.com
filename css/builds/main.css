@@ -125,8 +125,6 @@ body {
 .section {
   padding: 4em 0;
   background: #ebe4e0; }
-  .section.no-bottom-pad {
-    padding-bottom: 0; }
 
 .wrap {
   max-width: 1000px;
@@ -140,6 +138,13 @@ body {
   float: right;
   position: relative;
   left: -40px; }
+
+/* modifiers */
+.no-bottom-pad {
+  padding-bottom: 0; }
+
+.no-bottom-margin {
+  margin-bottom: 0; }
 
 /* TYPOGRAPHY */
 .center {
@@ -342,6 +347,38 @@ body {
   padding: 0 5% 0 10%; }
 .contact-us .illustration-cell {
   padding: 40px 10% 0 5%; }
+
+/* Header */
+.site-header {
+  background: #ebe4e0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+  border-top: 1px solid #f5f1ef;
+  box-shadow: 0px 1px 3px 0px rgba(6, 16, 48, 0.2);
+  height: 80px;
+  transition: height 0.3s; }
+
+.page {
+  padding-top: 79px; }
+
+/* reduced version of the header */
+.header-reduced .site-header {
+  height: 50px; }
+
+.site-header-nav {
+  list-style-type: none; }
+  .site-header-nav li {
+    display: inline-block;
+    padding: 30px 20px; }
+    .site-header-nav li a {
+      color: #7a7977;
+      text-decoration: none;
+      display: block; }
+      .site-header-nav li a:hover {
+        color: #C35050; }
 
 /* Fancy Fixed Footer */
 .footer {

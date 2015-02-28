@@ -11,11 +11,11 @@
         </div>
     </div>
 
-    <div class="section products-block no-bottom-pad">
+    <div id="js-waypoint-products-section" class="section products-block no-bottom-pad">
         <img class="needle" src="/wp-content/themes/thebespokeapparel-child/images/needle.png" />
         <div class="wrap center">
             <h2 class="headline red">Our Products</h2>
-            <p class="lead choke">Sure, we make suits. . . We also have everything that makes an amazing suit perfect.  </p>
+            <p class="lead choke no-bottom-margin">Sure, we make suits. . . We also have everything that makes an amazing suit perfect.  </p>
         </div>
     </div>
     <div class="section js-product-slide-frame">
@@ -165,6 +165,6 @@
     ?>
 </div>
 
-
+<script src="/wp-content/themes/thebespokeapparel-child/js/vendor/waypoints-v3.1.1.js"></script>
 <script src="/wp-content/themes/thebespokeapparel-child/js/bespoke.js"></script>
 <?php get_footer(); ?>

@@ -10,7 +10,13 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<div id="wrapper" class="hfeed"><header id="header" role="banner"></section>
 
-</header>
-<div id="container">
+
+<div class="site-header">
+    <ul class="wrap site-header-nav">
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Who We Are</a></li>
+        <li><a href="#">What We Do</a></li>
+        <li><a href="#">Contact us</a></li>
+    </ul>
+</div>

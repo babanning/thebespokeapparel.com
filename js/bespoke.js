@@ -141,3 +141,18 @@ new Slider({
         //ADD IMAGE SWITCHING HERE WHEN READY
     }
 });
+
+
+
+/* WAYPOINTS */
+var headerWaypoint = new Waypoint({
+  element: document.getElementById('js-waypoint-products-section'),
+  handler: function(direction) {
+    if (direction == "down") {
+        $('body').addClass('header-reduced');
+    } else {
+        $('body').removeClass('header-reduced');
+    }
+  },
+  offset: 80
+})
