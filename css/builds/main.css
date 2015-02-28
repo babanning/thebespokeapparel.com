@@ -358,22 +358,25 @@ body {
   z-index: 5;
   border-top: 1px solid #f5f1ef;
   box-shadow: 0px 1px 3px 0px rgba(6, 16, 48, 0.2);
-  height: 80px;
   transition: height 0.3s; }
 
 .page {
   padding-top: 79px; }
 
 /* reduced version of the header */
-.header-reduced .site-header {
-  height: 50px; }
+.header-reduced .site-header li {
+  padding-top: 10px;
+  padding-bottom: 10px; }
 
 .site-header-nav {
-  list-style-type: none; }
+  list-style-type: none;
+  padding-left: 0; }
   .site-header-nav li {
-    display: inline-block;
-    padding: 30px 20px; }
+    float: left;
+    padding: 30px 40px 30px 20px;
+    transition: padding-top 0.4s, padding-bottom 0.4s; }
     .site-header-nav li a {
+      vertical-align: middle;
       color: #7a7977;
       text-decoration: none;
       display: block; }
