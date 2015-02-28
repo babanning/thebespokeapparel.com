@@ -11,7 +11,7 @@
         </div>
     </div>
 
-    <div id="js-waypoint-products-section" class="section products-block no-bottom-pad">
+    <div id="section-id-products" class="js-waypoint-products-section section products-block no-bottom-pad">
         <img class="needle" src="/wp-content/themes/thebespokeapparel-child/images/needle.png" />
         <div class="wrap center">
             <h2 class="headline red">Our Products</h2>
@@ -42,7 +42,7 @@
         </div>
         <div class="section cell-controller center">
         </div>
-    <div class="section what-we-do">
+    <div id="section-id-whatwedo" class="section what-we-do">
         <h2 class="headline center">What We Do</h2>
         <div class="wrap center cell-group align-top">
             <div class="cell">
@@ -75,7 +75,7 @@
         <!-- <img class="bg-image" src="/wp-content/themes/thebespokeapparel-child/images/what-we-do.png" /> -->
     </div>
 
-    <div class="section who-we-are">
+    <div id="section-id-whoweare" class="section who-we-are">
         <img class="needle" src="/wp-content/themes/thebespokeapparel-child/images/needle.png" />
         <div class="wrap center">
             <h2 class="headline red">Who We Are</h2>
@@ -125,7 +125,7 @@
         </div>
     </div>
 
-    <div class="section contact-us">
+    <div id="section-id-contactus" class="section contact-us">
         <img class="needle" src="/wp-content/themes/thebespokeapparel-child/images/needle.png" />
         <div class="wrap center">
             <h2 class="headline red">Contact Us</h2>

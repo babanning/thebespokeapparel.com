@@ -146,7 +146,7 @@ new Slider({
 
 /* WAYPOINTS */
 var headerWaypoint = new Waypoint({
-  element: document.getElementById('js-waypoint-products-section'),
+  element: $('.js-waypoint-products-section')[0],
   handler: function(direction) {
     if (direction == "down") {
         $('body').addClass('header-reduced');
@@ -156,3 +156,11 @@ var headerWaypoint = new Waypoint({
   },
   offset: 80
 })
+
+/* Wire up the header to scroll to spots */
+$(".site-header").find('a').click(function(e) {
+    e.preventDefault();
+    $('html, body').animate({
+        scrollTop: $("#"+ $(this).data('location') ).offset().top
+    }, 400);
+});

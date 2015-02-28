@@ -14,9 +14,9 @@
 
 <div class="site-header">
     <ul class="wrap site-header-nav">
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Who We Are</a></li>
-        <li><a href="#">What We Do</a></li>
-        <li><a href="#">Contact us</a></li>
+        <li><a href="#" data-location="section-id-products">Products</a></li>
+        <li><a href="#" data-location="section-id-whatwedo">What We Do</a></li>
+        <li><a href="#" data-location="section-id-whoweare">Who We Are</a></li>
+        <li><a href="#" data-location="section-id-contactus">Contact us</a></li>
     </ul>
 </div>
