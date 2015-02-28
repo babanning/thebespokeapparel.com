@@ -9,7 +9,8 @@ window.$ = jQuery;
             child:null,
             thumbContainer:null,
             prevBtn:null,
-            nextBtn:null
+            nextBtn:null,
+            onSwitch: function() {}
         }, options);
 
         var THUMB_CLASSES = config.thumbClasses,
@@ -85,6 +86,9 @@ window.$ = jQuery;
                 aS.addClass(newActiveDirection).addClass('active');
                 var oldActiveDirection = (newActiveDirection == 'from-left') ? 'to-right' : 'to-left';
                 oldActive.removeClass('from-right from-left active').addClass(oldActiveDirection).addClass('was-active');
+
+                //fire callback (defaults to empty function)
+                config.onSwitch(aS, oldActive); //new, old
             }
     }
 
@@ -113,6 +117,8 @@ window.$ = jQuery;
     };
     init();
 }
+
+//PRODUCTS
 new Slider({
     thumbClasses:"cell-circle",
     parent:$('.js-product-slide-frame'),
@@ -121,11 +127,17 @@ new Slider({
     prevBtn:$('.js-btn-prev'),
     nextBtn:$('.js-btn-next')
 });
+
+//TESTIMONIALS
 new Slider({
     thumbClasses:"cell-circle",
     parent:$('.js-testimonial-slide-frame'),
     child:$('.testimonial-slide'),
     thumbContainer:$('.testimonials-thumbs'),
     prevBtn:$('.js-tst-btn-prev'),
-    nextBtn:$('.js-tst-btn-next')
+    nextBtn:$('.js-tst-btn-next'),
+    onSwitch: function(newActiveEl, oldActiveEl) {
+        console.log('slide switched!', newActiveEl, oldActiveEl);
+        //ADD IMAGE SWITCHING HERE WHEN READY
+    }
 });
