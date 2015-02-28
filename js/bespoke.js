@@ -1,23 +1,23 @@
 window.$ = jQuery;
 
-var Slider = function(options) {
-    options = options || {};
+    var Slider = function(options) {
+        options = options || {};
 
-    var config = $.extend({
-        thumbClasses: null,
-        parent:null,
-        child:null,
-        thumbContainer:null,
-        prevBtn:null,
-        nextBtn:null
-    }, options);
+        var config = $.extend({
+            thumbClasses: null,
+            parent:null,
+            child:null,
+            thumbContainer:null,
+            prevBtn:null,
+            nextBtn:null
+        }, options);
 
-    var THUMB_CLASSES = config.thumbClasses,
-        EL_PARENT = config.parent,
-        EL_CHILD = config.child,
-        EL_THUMB_CONTAINER = config.thumbContainer,
-        EL_PREV_BTN = config.prevBtn,
-        EL_NEXT_BTN = config.nextBtn;
+        var THUMB_CLASSES = config.thumbClasses,
+            EL_PARENT = config.parent,
+            EL_CHILD = config.child,
+            EL_THUMB_CONTAINER = config.thumbContainer,
+            EL_PREV_BTN = config.prevBtn,
+            EL_NEXT_BTN = config.nextBtn;
 
 
     var bindClicks = function() {
@@ -97,10 +97,12 @@ var Slider = function(options) {
 
     var init = function() {
         
+        EL_PARENT.addClass('ds-slider-frame');
         //draw circles and assign datas
         EL_PARENT.find(EL_CHILD).each(function(i) {
-            $(this).attr('data-slide-id', i);
-            $('<a href="#"/>').addClass(THUMB_CLASSES).attr('data-slide-id', i).appendTo( EL_THUMB_CONTAINER );
+            $(this).attr('data-slide-id', i)
+                   .addClass('ds-slider-slide');
+            $('<a href="#"/>').addClass('ds-slider-thumb').addClass(THUMB_CLASSES).attr('data-slide-id', i).appendTo( EL_THUMB_CONTAINER );
         });
 
         bindClicks();
@@ -111,7 +113,6 @@ var Slider = function(options) {
     };
     init();
 }
-
 new Slider({
     thumbClasses:"cell-circle",
     parent:$('.js-product-slide-frame'),
@@ -119,4 +120,12 @@ new Slider({
     thumbContainer:$('.cell-controller'),
     prevBtn:$('.js-btn-prev'),
     nextBtn:$('.js-btn-next')
+});
+new Slider({
+    thumbClasses:"cell-circle",
+    parent:$('.js-testimonial-slide-frame'),
+    child:$('.testimonial-slide'),
+    thumbContainer:$('.testimonials-thumbs'),
+    prevBtn:$('.js-tst-btn-prev'),
+    nextBtn:$('.js-tst-btn-next')
 });

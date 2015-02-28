@@ -17,6 +17,8 @@ body {
     font-size: $font-size;
 }
 
+@import "ds-slider";
+
 
 /* --------- FROM SLIDER PROJECT. ORGANIZE THIS LATER --------*/
 @-webkit-keyframes kf-from-left {
@@ -185,7 +187,7 @@ body {
 	&.cell-group-half {
 		.cell {
 			width:50%;
-		}
+		} 
 	}
 
 
@@ -215,6 +217,7 @@ body {
 }
 .cell-controller {
 	padding:2.5em 0;
+}
 	.cell-circle {
 		display:inline-block;
 		width:25px;
@@ -227,7 +230,6 @@ body {
 			background:$red;
 		}
 	}
-}
 
 .form {
 	color:$lead-copy;
@@ -263,6 +265,20 @@ body {
 }
 .wpcf7-validation-errors { display:none !important; }
 
+.vid-block {
+	position:relative;
+	
+	.abs {
+		position:absolute;
+		left:0;
+		top:50%;
+		transform: translateY(-50%);
+		width:100%;
+		text-align:center;
+	}
+}
+
+
 /* SPECIFIC SECTIONS */
 
 .section.js-product-slide-frame {
@@ -276,20 +292,29 @@ body {
 	}
 }
 
+.abs.testimonial-slide-frame {
+	height:190px;
+}
 
-
-.vid-block {
-	position:relative;
-	
-	.abs {
-		position:absolute;
-		left:0;
-		top:50%;
-		transform: translateY(-50%);
-		width:100%;
-		text-align:center;
+.testimonials-thumbs-container {
+	position:absolute;
+	bottom:10px;
+	left:0;
+	width:100%;
+	text-align:center;
+}
+.testimonials-thumbs {
+	.ds-slider-thumb.cell-circle {
+		border-width:3px;
+		border-color:#fff;
+		&.active {
+			background:#fff;
+		}
 	}
 }
+
+
+
 
 .section.what-we-do {
 	background: url('/wp-content/themes/thebespokeapparel-child/images/what-we-do.png');

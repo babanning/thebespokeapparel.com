@@ -9,6 +9,69 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px; }
 
+@-webkit-keyframes kf-from-left {
+  from {
+    transform: translate3d(-100%, 0, 0); }
+
+  to {
+    transform: translate3d(0, 0, 0); } }
+
+@-webkit-keyframes kf-from-right {
+  from {
+    transform: translate3d(100%, 0, 0); }
+
+  to {
+    transform: translate3d(0, 0, 0); } }
+
+@-webkit-keyframes kf-to-left {
+  from {
+    transform: translate3d(0, 0, 0); }
+
+  to {
+    transform: translate3d(-100%, 0, 0); } }
+
+@-webkit-keyframes kf-to-right {
+  from {
+    transform: translate3d(0, 0, 0); }
+
+  to {
+    transform: translate3d(100%, 0, 0); } }
+
+.ds-slider-slide {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  z-index: 2; }
+
+.ds-slider-slide.active {
+  visibility: visible;
+  z-index: 3; }
+
+.ds-slider-slide.was-active {
+  visibility: visible;
+  opacity: 0;
+  -webkit-transition: opacity 0s;
+  -webkit-transition-delay: 0.5s; }
+
+.ds-slider-slide.active.from-left {
+  -webkit-animation: kf-from-left 0.5s; }
+
+.ds-slider-slide.active.from-right {
+  -webkit-animation: kf-from-right 0.5s; }
+
+.ds-slider-slide.was-active.to-left {
+  -webkit-animation: kf-to-left 0.5s; }
+
+.ds-slider-slide.was-active.to-right {
+  -webkit-animation: kf-to-right 0.5s; }
+
+.ds-slider-frame {
+  position: relative;
+  overflow: hidden; }
+
 /* --------- FROM SLIDER PROJECT. ORGANIZE THIS LATER --------*/
 @-webkit-keyframes kf-from-left {
   from {
@@ -181,16 +244,17 @@ body {
 
 .cell-controller {
   padding: 2.5em 0; }
-  .cell-controller .cell-circle {
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    border: 4px solid #C35050;
-    background: transparent;
-    border-radius: 50%;
-    margin: 0 5px; }
-    .cell-controller .cell-circle.active {
-      background: #C35050; }
+
+.cell-circle {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border: 4px solid #C35050;
+  background: transparent;
+  border-radius: 50%;
+  margin: 0 5px; }
+  .cell-circle.active {
+    background: #C35050; }
 
 .form {
   color: #7a7977; }
@@ -218,6 +282,16 @@ body {
 .wpcf7-validation-errors {
   display: none !important; }
 
+.vid-block {
+  position: relative; }
+  .vid-block .abs {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center; }
+
 /* SPECIFIC SECTIONS */
 .section.js-product-slide-frame {
   position: relative;
@@ -230,15 +304,21 @@ body {
     top: 0;
     width: 100%; }
 
-.vid-block {
-  position: relative; }
-  .vid-block .abs {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-    text-align: center; }
+.abs.testimonial-slide-frame {
+  height: 190px; }
+
+.testimonials-thumbs-container {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  text-align: center; }
+
+.testimonials-thumbs .ds-slider-thumb.cell-circle {
+  border-width: 3px;
+  border-color: #fff; }
+  .testimonials-thumbs .ds-slider-thumb.cell-circle.active {
+    background: #fff; }
 
 .section.what-we-do {
   background: url('/wp-content/themes/thebespokeapparel-child/images/what-we-do.png');

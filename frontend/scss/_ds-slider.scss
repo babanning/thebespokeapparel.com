@@ -1,0 +1,52 @@
+@-webkit-keyframes kf-from-left {
+    from {transform:translate3d(-100%,0,0)}
+    to {transform:translate3d(0,0,0)}
+} 
+@-webkit-keyframes kf-from-right {
+    from {transform:translate3d(100%,0,0)}
+    to {transform:translate3d(0,0,0)}
+}
+@-webkit-keyframes kf-to-left {
+    from {transform:translate3d(0,0,0)}
+    to {transform:translate3d(-100%,0,0)}
+} 
+@-webkit-keyframes kf-to-right {
+    from {transform:translate3d(0,0,0)}
+    to {transform:translate3d(100%,0,0)}
+}
+
+
+.ds-slider-slide {
+    position: absolute;
+    left:0;top:0;width:100%;height:100%;
+    visibility: hidden;
+    z-index:2;
+}
+.ds-slider-slide.active {
+    visibility: visible;
+    z-index:3;
+}
+.ds-slider-slide.was-active {
+    visibility: visible;
+    opacity:0;
+    -webkit-transition: opacity 0s;
+    -webkit-transition-delay: 0.5s;
+}
+
+.ds-slider-slide.active.from-left {
+    -webkit-animation: kf-from-left 0.5s;
+}
+.ds-slider-slide.active.from-right {
+    -webkit-animation: kf-from-right 0.5s;
+}
+.ds-slider-slide.was-active.to-left {
+    -webkit-animation: kf-to-left 0.5s;
+}
+.ds-slider-slide.was-active.to-right {
+    -webkit-animation: kf-to-right 0.5s;
+}
+
+.ds-slider-frame {
+    position:relative;
+    overflow:hidden;
+}

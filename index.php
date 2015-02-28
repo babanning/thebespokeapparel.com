@@ -106,11 +106,22 @@
     <div class="testimonials vid-block">
         <!--This structure might need to change because of slider behavior -->
         <img class="vid-img" src="/wp-content/themes/thebespokeapparel-child/images/intro-block-bg-img-invert.png">
-        <div class="abs">
+        <div class="abs js-testimonial-slide-frame testimonial-slide-frame">
             <div class="testimonial-slide">
                 <h4 class="quote-content">"Bespoke is simply the greatest."</h4>
                 <h4 class="quote-author">- Muhammad Ali</h4>
             </div>
+            <div class="testimonial-slide">
+                <h4 class="quote-content">"I love working on this site"</h4>
+                <h4 class="quote-author">- Drew Conley</h4>
+            </div>
+            <div class="testimonial-slide">
+                <h4 class="quote-content">"Zubat is my favorite Pokemon"</h4>
+                <h4 class="quote-author">- Brett Banning</h4>
+            </div>
+        </div>
+        <div class="testimonials-thumbs-container">
+            <div class="testimonials-thumbs"></div>
         </div>
     </div>
 
