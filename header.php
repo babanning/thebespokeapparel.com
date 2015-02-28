@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width" />
     <title><?php wp_title( ' | ', true, 'right' ); ?></title>
     <!-- <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>" /> -->
-    <link rel="stylesheet" href="/wp-content/themes/thebespokeapparel-child/css/builds/main.css"></link>
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/builds/main.css"></link>
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <?php wp_head(); ?>
 </head>

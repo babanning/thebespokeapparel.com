@@ -2,7 +2,7 @@
 
 <div class="page">
     <div class="vid-block">
-        <img class="vid-img" src="/wp-content/themes/thebespokeapparel-child/images/intro-block-bg-img.png">
+        <img class="vid-img" src="<?php echo get_template_directory_uri(); ?>/images/intro-block-bg-img.png">
         <div class="abs">
             <div class="right-content">
             <h1 class="headline" id="slogan">Master the Unspoken Word.</h1>
@@ -12,7 +12,7 @@
     </div>
 
     <div id="section-id-products" class="js-waypoint-products-section section products-block no-bottom-pad">
-        <img class="needle" src="/wp-content/themes/thebespokeapparel-child/images/needle.png" />
+        <img class="needle" src="<?php echo get_template_directory_uri(); ?>/images/needle.png" />
         <div class="wrap center">
             <h2 class="headline red">Our Products</h2>
             <p class="lead choke no-bottom-margin">Sure, we make suits. . . We also have everything that makes an amazing suit perfect.  </p>
@@ -42,7 +42,7 @@
         </div>
         <div class="section cell-controller center">
         </div>
-    <div id="section-id-whatwedo" class="section what-we-do">
+    <div id="section-id-whatwedo" class="section what-we-do" style="background: url('<?php echo get_template_directory_uri(); ?>/images/what-we-do.png')">
         <h2 class="headline center">What We Do</h2>
         <div class="wrap center cell-group align-top">
             <div class="cell">
@@ -72,11 +72,11 @@
                 </div>
             </div>
         </div>
-        <!-- <img class="bg-image" src="/wp-content/themes/thebespokeapparel-child/images/what-we-do.png" /> -->
+        <!-- <img class="bg-image" src="<?php echo get_template_directory_uri(); ?>/images/what-we-do.png" /> -->
     </div>
 
     <div id="section-id-whoweare" class="section who-we-are">
-        <img class="needle" src="/wp-content/themes/thebespokeapparel-child/images/needle.png" />
+        <img class="needle" src="<?php echo get_template_directory_uri(); ?>/images/needle.png" />
         <div class="wrap center">
             <h2 class="headline red">Who We Are</h2>
             <p class="lead choke">Don&rsquo;t settle for less than perfection. We’ll give you a suit that is one of a kind, made just for you.</p>
@@ -105,7 +105,7 @@
 
     <div class="testimonials vid-block">
         <!--This structure might need to change because of slider behavior -->
-        <img class="vid-img" src="/wp-content/themes/thebespokeapparel-child/images/intro-block-bg-img-invert.png">
+        <img class="vid-img" src="<?php echo get_template_directory_uri(); ?>/images/intro-block-bg-img-invert.png">
         <div class="abs js-testimonial-slide-frame testimonial-slide-frame">
             <div class="testimonial-slide">
                 <h4 class="quote-content">"Bespoke is simply the greatest."</h4>
@@ -126,17 +126,17 @@
     </div>
 
     <div id="section-id-contactus" class="section contact-us">
-        <img class="needle" src="/wp-content/themes/thebespokeapparel-child/images/needle.png" />
+        <img class="needle" src="<?php echo get_template_directory_uri(); ?>/images/needle.png" />
         <div class="wrap center">
             <h2 class="headline red">Contact Us</h2>
             <p class="lead choke">Let’s see what we can do for you. Email or call us to get started on the path to lifechanging clothing.</p>
         </div>
         <div class="wrap cell-group cell-group-half align-top">
             <div class="cell form-cell">
-                <?php echo do_shortcode('[contact-form-7 id="13" title="Home Contact Form"]'); ?>
+                <?php echo do_shortcode('[contact-form-7 id="4" title="Home Contact Form"]'); ?>
             </div>
             <div class="cell illustration-cell">
-                <img src="/wp-content/themes/thebespokeapparel-child/images/phone.png" />
+                <img src="<?php echo get_template_directory_uri(); ?>/images/phone.png" />
             </div>
         </div>
     </div>
@@ -165,6 +165,6 @@
     ?>
 </div>
 
-<script src="/wp-content/themes/thebespokeapparel-child/js/vendor/waypoints-v3.1.1.js"></script>
-<script src="/wp-content/themes/thebespokeapparel-child/js/bespoke.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/waypoints-v3.1.1.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/bespoke.js"></script>
 <?php get_footer(); ?>
