@@ -136,6 +136,22 @@
         <!--This structure might need to change because of slider behavior -->
         <img class="vid-img" src="<?php echo get_template_directory_uri(); ?>/images/intro-block-bg-img-invert.png">
         <div class="abs js-testimonial-slide-frame testimonial-slide-frame">
+
+        <?php
+        $args = array( 'post_type' => 'testimonial', 'posts_per_page' => 100 );
+        $loop = new WP_Query( $args );
+        while ( $loop->have_posts() ) : $loop->the_post();
+            echo '<div class="testimonial-slide">';
+                echo '<h4 class="quote-content">"';
+                    the_title();
+                echo '"</h4>';
+                echo '<h4 class="quote-author">-';
+                echo wp_strip_all_tags( get_the_content() );
+                echo '</h4>';
+            echo '</div>';
+        endwhile;
+        ?>
+            <!--
             <div class="testimonial-slide">
                 <h4 class="quote-content">"Bespoke is simply the greatest."</h4>
                 <h4 class="quote-author">- Muhammad Ali</h4>
@@ -148,6 +164,7 @@
                 <h4 class="quote-content">"Zubat is my favorite Pokemon"</h4>
                 <h4 class="quote-author">- Brett Banning</h4>
             </div>
+            -->
         </div>
         <div class="testimonials-thumbs-container">
             <div class="testimonials-thumbs"></div>
