@@ -6,8 +6,11 @@
         <div class="abs">
             <div class="right-content">
             <h1 class="headline" id="slogan">Master the Unspoken Word.</h1>
-            <a href="#" onclick="return false" class="button hollow-button">watch the video</a>
+            <a href="#" class="js-video-btn button hollow-button">watch the video</a>
           </div>
+        </div>
+        <div class="abs video-panel">
+            <!-- <iframe class="fade-in" id="bespoke-youtube-iframe" width="100%" height="100%" src="https://www.youtube.com/embed/QL9Qlkky81M?rel=0&autoplay=0&showinfo=0&modestbranding=1" frameborder="0" allowfullscreen></iframe> -->
         </div>
     </div>
 
@@ -48,7 +51,7 @@
     
     endwhile;
     ?>
-<!--             <div class="cell-group">
+<!--     <div class="cell-group">
                 <div class="wrap">
                     <div class="cell"><img src="http://placehold.it/500x333/bababa"></div>
                     <div class="cell"><img src="http://placehold.it/500x333/bababa"></div>

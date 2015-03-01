@@ -165,6 +165,14 @@ $(".site-header").find('a').click(function(e) {
     }, 400);
 });
 
+/* Wire up the video button */
+$('.js-video-btn').click(function(e) {
+    e.preventDefault();
+    $('.abs.video-panel').addClass('visible')
+        .html('<iframe id="bespoke-youtube-iframe" width="100%" height="100%" src="https://www.youtube.com/embed/QL9Qlkky81M?rel=0&autoplay=1&showinfo=0&modestbranding=1" frameborder="0" allowfullscreen />');
+})
+
+
 /* FastClick on <body> */
 if ('addEventListener' in document) {
     document.addEventListener('DOMContentLoaded', function() {
