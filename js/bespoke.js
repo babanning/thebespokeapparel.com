@@ -164,3 +164,10 @@ $(".site-header").find('a').click(function(e) {
         scrollTop: $("#"+ $(this).data('location') ).offset().top
     }, 400);
 });
+
+/* FastClick on <body> */
+if ('addEventListener' in document) {
+    document.addEventListener('DOMContentLoaded', function() {
+        FastClick.attach(document.body);
+    }, false);
+}

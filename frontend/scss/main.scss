@@ -130,6 +130,10 @@ body {
 	font-size: 3em;
 }
 
+input[type="submit"].button {
+	-webkit-appearance: none;
+}
+
 .button,
 .hollow-button {
 	text-transform: uppercase;

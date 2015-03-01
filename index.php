@@ -152,19 +152,35 @@
 
 <div class="all-products">
 <?php
-    $args = array( 'post_type' => 'product', 'posts_per_page' => 10 );
+    $args = array( 'post_type' => 'product', 'posts_per_page' => 100 );
     $loop = new WP_Query( $args );
+    $group_i = 1; //iterator to get 6 in one group
+    $product_i = 1; //iterator to get 6 in one group
+
     while ( $loop->have_posts() ) : $loop->the_post();
-    echo '<div class="entry">';
-        the_title();
-        echo '<div class="entry-content">';
-            the_content();
+        if ($group_i == 1) {
+            echo '<div class="a-group-of-entries">';
+        };
+        echo '<div class="entry product-nth-'.$group_i . '">';
+            the_title();
+            echo '<div class="entry-content">';
+                the_content();
+            echo '</div>';
         echo '</div>';
-    echo '</div>';
+
+        if ($group_i == 6 || $product_i == $loop->post_count)  {
+            echo '</div><!--close-->';
+            $group_i = 1;
+        } else {
+            $group_i += 1;
+        };
+        $product_i += 1;
+    
     endwhile;
     ?>
 </div>
 
 <script src="<?php echo get_template_directory_uri(); ?>/js/vendor/waypoints-v3.1.1.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/fastclick.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/bespoke.js"></script>
 <?php get_footer(); ?>

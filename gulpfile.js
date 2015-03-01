@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var autoprefixer = require('gulp-autoprefixer');
 var browserSync = require('browser-sync');
 
 /* SERVER */
@@ -14,6 +15,7 @@ gulp.task('s', function() {
 gulp.task('sass', function () {
     gulp.src('frontend/scss/main.scss')
         .pipe(sass())
+        .pipe(autoprefixer())
         .pipe(gulp.dest('css/builds'));
 });
 
