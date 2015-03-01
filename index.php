@@ -19,7 +19,36 @@
         </div>
     </div>
     <div class="section js-product-slide-frame">
-            <div class="cell-group">
+
+            <?php
+    $args = array( 'post_type' => 'product', 'posts_per_page' => 100 );
+    $loop = new WP_Query( $args );
+    $group_i = 1; //iterator to get 6 in one group
+    $product_i = 1; //iterator to get 6 in one group
+
+    while ( $loop->have_posts() ) : $loop->the_post();
+        if ($group_i == 1) {
+            echo '<div class="cell-group"><div class="wrap">';
+        };
+        echo '<div class="cell product-nth-'.$group_i . '">';
+            //the_title();
+            // echo '<div class="entry-content">';
+            //     the_content();
+            // echo '</div>';
+            echo '<img src="http://placehold.it/500x333/bababa">';
+        echo '</div>';
+
+        if ($group_i == 6 || $product_i == $loop->post_count)  {
+            echo '</div></div><!--close-->';
+            $group_i = 1;
+        } else {
+            $group_i += 1;
+        };
+        $product_i += 1;
+    
+    endwhile;
+    ?>
+<!--             <div class="cell-group">
                 <div class="wrap">
                     <div class="cell"><img src="http://placehold.it/500x333/bababa"></div>
                     <div class="cell"><img src="http://placehold.it/500x333/bababa"></div>
@@ -38,7 +67,7 @@
                     <div class="cell"><img src="http://placehold.it/500x333/333333"></div>
                     <div class="cell"><img src="http://placehold.it/500x333/333333"></div>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="section cell-controller center">
         </div>
@@ -150,35 +179,34 @@
 
 
 
-<div class="all-products">
 <?php
-    $args = array( 'post_type' => 'product', 'posts_per_page' => 100 );
-    $loop = new WP_Query( $args );
-    $group_i = 1; //iterator to get 6 in one group
-    $product_i = 1; //iterator to get 6 in one group
 
-    while ( $loop->have_posts() ) : $loop->the_post();
-        if ($group_i == 1) {
-            echo '<div class="a-group-of-entries">';
-        };
-        echo '<div class="entry product-nth-'.$group_i . '">';
-            the_title();
-            echo '<div class="entry-content">';
-                the_content();
-            echo '</div>';
-        echo '</div>';
-
-        if ($group_i == 6 || $product_i == $loop->post_count)  {
-            echo '</div><!--close-->';
-            $group_i = 1;
-        } else {
-            $group_i += 1;
-        };
-        $product_i += 1;
-    
-    endwhile;
-    ?>
-</div>
+    //$args = array( 'post_type' => 'product', 'posts_per_page' => 100 );
+    //$loop = new WP_Query( $args );
+    //$group_i = 1; //iterator to get 6 in one group
+    //$product_i = 1; //iterator to get 6 in one group
+//
+    //while ( $loop->have_posts() ) : $loop->the_post();
+    //    if ($group_i == 1) {
+    //        echo '<div class="a-group-of-entries">';
+    //    };
+    //    echo '<div class="entry product-nth-'.$group_i . '">';
+    //        the_title();
+    //        echo '<div class="entry-content">';
+    //            the_content();
+    //        echo '</div>';
+    //    echo '</div>';
+//
+    //    if ($group_i == 6 || $product_i == $loop->post_count)  {
+    //        echo '</div><!--close-->';
+    //        $group_i = 1;
+    //    } else {
+    //        $group_i += 1;
+    //    };
+    //    $product_i += 1;
+    //
+    //endwhile;
+?>
 
 <script src="<?php echo get_template_directory_uri(); ?>/js/vendor/waypoints-v3.1.1.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/vendor/fastclick.js"></script>
