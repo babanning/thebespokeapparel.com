@@ -236,4 +236,7 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/vendor/waypoints-v3.1.1.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/vendor/fastclick.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/bespoke.js"></script>
+<style>
+    html {margin-top:0 !important;} /* wordpress admin bar */
+</style>
 <?php get_footer(); ?>
