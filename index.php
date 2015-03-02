@@ -144,6 +144,11 @@
         $args = array( 'post_type' => 'testimonial', 'posts_per_page' => 100 );
         $loop = new WP_Query( $args );
         while ( $loop->have_posts() ) : $loop->the_post();
+
+            $length = strlen ( get_the_title() ); 
+            if ($length > 60) {
+            echo '<div class="testimonial-slide long-testimonial">'; //`long` class for lengthy quotes
+            } else
             echo '<div class="testimonial-slide">';
                 echo '<h4 class="quote-content">"';
                     the_title();
