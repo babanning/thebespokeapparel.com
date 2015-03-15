@@ -194,6 +194,13 @@
             </div>
         </div>
     </div>
+
+    <div id="section-id-map" class="section map-section">
+        <!-- <div class="map-cover"></div> -->
+        <div class="googlemap-iframe-container">
+            <iframe class="googlemap-iframe" width="800" height="300" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Bespoke%20Apparel%2C%20Lamp%20and%20Lantern%20Village%2C%20Chesterfield%2C%20MO%2C%20United%20States&key=AIzaSyAMbyFhPXX4GKCMxd_AH6Ch0jczzoLTwro"></iframe>
+        </div>
+    </div>
 </div>
 <div class="footer">
     <div class="wrap">

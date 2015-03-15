@@ -428,6 +428,15 @@ input[type="submit"].button {
       .site-header-nav li a:hover {
         color: #C35050; }
 
+.map-section {
+  position: relative; }
+  .map-section .googlemap-iframe-container {
+    border-top: 3px solid gray;
+    border-bottom: 3px solid gray; }
+  .map-section .googlemap-iframe {
+    margin: 0 auto;
+    display: block; }
+
 /* Fancy Fixed Footer */
 .footer {
   background: #333;

@@ -420,6 +420,25 @@ input[type="submit"].button {
 	}
 }
 
+.map-section {
+	position:relative;
+	// .map-cover {
+	// 	z-index:3;
+	// 	position:absolute;
+	// 	left:0; top:0; right:0; bottom:0;
+	// 	//
+
+	// }
+	.googlemap-iframe-container {
+		border-top:3px solid gray;
+		border-bottom:3px solid gray;
+	}
+	.googlemap-iframe {
+		margin:0 auto;
+		display:block;
+	}
+}
+
 
 
 
