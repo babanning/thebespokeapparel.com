@@ -65,11 +65,33 @@ body {
 /* STRUCTURE */
 .section {
 	padding:4em 0;
-	background:$cream;
+	position:relative;
+	//background:$cream; //use texture image instead of solid color
+	z-index:1;
+	background: url('/wp-content/themes/thebespokeapparel-child/images/bespoke-pattern.png') repeat repeat;
+		//url('/wp-content/themes/thebespokeapparel-child/images/top-texture.jpg') no-repeat,
+	&:before {
+		content:'';
+		left:0;top:0;
+		position:absolute;
+		height:500px;
+		width:100%;
+		z-index:-1;
+
+		//background:black;
+		background: url('/wp-content/themes/thebespokeapparel-child/images/top-texture.jpg') no-repeat no-repeat;
+	}
+	&.nobg {
+		background:none;
+		&:before {
+			background:none;
+		}
+	}
 }
 
 .wrap {
-	max-width: 1000px;
+	//max-width: 1000px;
+	width:960px; //Going static for now
 	margin: 0 auto;
 }
 .page {
@@ -276,7 +298,7 @@ input[type="submit"].button {
 
 .vid-block {
 	position:relative;
-	
+	min-width:960px; //Not responsive for now
 	.abs {
 		position:absolute;
 		left:0;
@@ -340,6 +362,9 @@ input[type="submit"].button {
 .section.what-we-do {
 	//background: url('/wp-content/themes/thebespokeapparel-child/images/what-we-do.png');
 	background-size:cover;
+	&:before {
+		background:none;
+	}
 }
 
 .vid-img {
