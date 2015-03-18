@@ -16,6 +16,9 @@
     <div class="site-header-logo-flag">
         <?php include 'svg/bespoke-logo.svg'; ?>
     </div>
+    <div class="site-header-logo-small">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/bespoke-logo-smaller.png" />
+    </div>
     
         <ul class="wrap site-header-nav left">
             <li><a href="#" data-location="section-id-products">Products</a></li>
