@@ -20,60 +20,61 @@
             <h2 class="headline red">Our Products</h2>
             <p class="lead choke no-bottom-margin">Sure, we make suits. . . We also have everything that makes an amazing suit perfect.  </p>
         </div>
-    </div>
-    <div class="section nobg js-product-slide-frame">
-
-            <?php
-    $args = array( 'post_type' => 'product', 'posts_per_page' => 100 );
-    $loop = new WP_Query( $args );
-    $group_i = 1; //iterator to get 6 in one group
-    $product_i = 1; //iterator to get 6 in one group
-
-    while ( $loop->have_posts() ) : $loop->the_post();
-        if ($group_i == 1) {
-            echo '<div class="cell-group"><div class="wrap">';
-        };
-        echo '<div class="cell product-nth-'.$group_i . '">';
-            //the_title();
-            // echo '<div class="entry-content">';
-            //     the_content();
-            // echo '</div>';
-            echo '<img src="http://placehold.it/500x333/bababa">';
-        echo '</div>';
-
-        if ($group_i == 6 || $product_i == $loop->post_count)  {
-            echo '</div></div><!--close-->';
-            $group_i = 1;
-        } else {
-            $group_i += 1;
-        };
-        $product_i += 1;
     
-    endwhile;
-    ?>
-<!--     <div class="cell-group">
-                <div class="wrap">
-                    <div class="cell"><img src="http://placehold.it/500x333/bababa"></div>
-                    <div class="cell"><img src="http://placehold.it/500x333/bababa"></div>
-                    <div class="cell"><img src="http://placehold.it/500x333/bababa"></div>
-                    <div class="cell"><img src="http://placehold.it/500x333/bababa"></div>
-                    <div class="cell"><img src="http://placehold.it/500x333/bababa"></div>
-                    <div class="cell"><img src="http://placehold.it/500x333/bababa"></div>
-                </div>
-            </div>
-            <div class="cell-group">
-                <div class="wrap">
-                    <div class="cell"><img src="http://placehold.it/500x333/333333"></div>
-                    <div class="cell"><img src="http://placehold.it/500x333/333333"></div>
-                    <div class="cell"><img src="http://placehold.it/500x333/333333"></div>
-                    <div class="cell"><img src="http://placehold.it/500x333/333333"></div>
-                    <div class="cell"><img src="http://placehold.it/500x333/333333"></div>
-                    <div class="cell"><img src="http://placehold.it/500x333/333333"></div>
-                </div>
-            </div> -->
+        <div class="section nobg js-product-slide-frame">
+
+                    <?php
+            $args = array( 'post_type' => 'product', 'posts_per_page' => 100 );
+            $loop = new WP_Query( $args );
+            $group_i = 1; //iterator to get 6 in one group
+            $product_i = 1; //iterator to get 6 in one group
+
+            while ( $loop->have_posts() ) : $loop->the_post();
+                if ($group_i == 1) {
+                    echo '<div class="cell-group"><div class="wrap">';
+                };
+                echo '<div class="cell product-nth-'.$group_i . '">';
+                    //the_title();
+                    // echo '<div class="entry-content">';
+                    //     the_content();
+                    // echo '</div>';
+                    echo '<img src="http://placehold.it/500x333/bababa">';
+                echo '</div>';
+
+                if ($group_i == 6 || $product_i == $loop->post_count)  {
+                    echo '</div></div><!--close-->';
+                    $group_i = 1;
+                } else {
+                    $group_i += 1;
+                };
+                $product_i += 1;
+            
+            endwhile;
+            ?>
+        <!--     <div class="cell-group">
+                        <div class="wrap">
+                            <div class="cell"><img src="http://placehold.it/500x333/bababa"></div>
+                            <div class="cell"><img src="http://placehold.it/500x333/bababa"></div>
+                            <div class="cell"><img src="http://placehold.it/500x333/bababa"></div>
+                            <div class="cell"><img src="http://placehold.it/500x333/bababa"></div>
+                            <div class="cell"><img src="http://placehold.it/500x333/bababa"></div>
+                            <div class="cell"><img src="http://placehold.it/500x333/bababa"></div>
+                        </div>
+                    </div>
+                    <div class="cell-group">
+                        <div class="wrap">
+                            <div class="cell"><img src="http://placehold.it/500x333/333333"></div>
+                            <div class="cell"><img src="http://placehold.it/500x333/333333"></div>
+                            <div class="cell"><img src="http://placehold.it/500x333/333333"></div>
+                            <div class="cell"><img src="http://placehold.it/500x333/333333"></div>
+                            <div class="cell"><img src="http://placehold.it/500x333/333333"></div>
+                            <div class="cell"><img src="http://placehold.it/500x333/333333"></div>
+                        </div>
+                    </div> -->
         </div>
-        <div class="section cell-controller center">
+        <div class="section nobg cell-controller center">
         </div>
+    </div>
     <div id="section-id-whatwedo" class="section what-we-do" style="background: url('<?php echo get_template_directory_uri(); ?>/images/what-we-do.png')">
         <h2 class="headline center">What We Do</h2>
         <div class="wrap center cell-group align-top">
@@ -163,14 +164,6 @@
             <div class="testimonial-slide">
                 <h4 class="quote-content">"Bespoke is simply the greatest."</h4>
                 <h4 class="quote-author">- Muhammad Ali</h4>
-            </div>
-            <div class="testimonial-slide">
-                <h4 class="quote-content">"I love working on this site"</h4>
-                <h4 class="quote-author">- Drew Conley</h4>
-            </div>
-            <div class="testimonial-slide">
-                <h4 class="quote-content">"Zubat is my favorite Pokemon"</h4>
-                <h4 class="quote-author">- Brett Banning</h4>
             </div>
             -->
         </div>
