@@ -15,7 +15,9 @@
     </div>
 
     <div id="section-id-products" class="js-waypoint-products-section section products-block no-bottom-pad">
-        <img class="needle" src="<?php echo get_template_directory_uri(); ?>/images/needle.png" />
+        <div class="wrap">
+            <img class="needle" src="<?php echo get_template_directory_uri(); ?>/images/needle.png" />
+        </div>
         <div class="wrap center">
             <h2 class="headline red">Our Products</h2>
             <p class="lead choke no-bottom-margin">Sure, we make suits. . . We also have everything that makes an amazing suit perfect.  </p>
@@ -109,7 +111,9 @@
     </div>
 
     <div id="section-id-whoweare" class="section who-we-are">
-        <img class="needle" src="<?php echo get_template_directory_uri(); ?>/images/needle.png" />
+        <div class="wrap">
+            <img class="needle" src="<?php echo get_template_directory_uri(); ?>/images/needle.png" />
+        </div>
         <div class="wrap center">
             <h2 class="headline red">Who We Are</h2>
             <p class="lead choke">Don&rsquo;t settle for less than perfection. We’ll give you a suit that is one of a kind, made just for you.</p>
@@ -173,7 +177,9 @@
     </div>
 
     <div id="section-id-contactus" class="section contact-us">
-        <img class="needle" src="<?php echo get_template_directory_uri(); ?>/images/needle.png" />
+        <div class="wrap">
+            <img class="needle" src="<?php echo get_template_directory_uri(); ?>/images/needle.png" />
+        </div>
         <div class="wrap center">
             <h2 class="headline red">Contact Us</h2>
             <p class="lead choke">Let’s see what we can do for you. Email or call us to get started on the path to lifechanging clothing.</p>
