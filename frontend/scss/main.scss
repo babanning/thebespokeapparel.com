@@ -67,7 +67,7 @@ body {
 	position:relative;
 	//background:$cream; //use texture image instead of solid color
 	z-index:1;
-	background: url('/wp-content/themes/thebespokeapparel-child/images/bespoke-pattern.png') repeat repeat;
+	background: url('/thebespokeapparel/wp-content/themes/thebespokeapparel-child/images/bespoke-pattern.png') repeat repeat;
 		//url('/wp-content/themes/thebespokeapparel-child/images/top-texture.jpg') no-repeat,
 	&:before {
 		content:'';
@@ -78,7 +78,8 @@ body {
 		z-index:-1;
 
 		//background:black;
-		background: url('/wp-content/themes/thebespokeapparel-child/images/top-texture.jpg') no-repeat no-repeat;
+		background: url('/thebespokeapparel/wp-content/themes/thebespokeapparel-child/images/top-texture.jpg') no-repeat no-repeat;
+		//background: url('/wp-content/themes/thebespokeapparel-child/images/top-texture.jpg') no-repeat no-repeat;
 	}
 	&.nobg {
 		background:none;
@@ -118,9 +119,10 @@ body {
 }
 .lead {
 	color:$lead-copy;
-	font-size:1.6em;
-	line-height:1.6em;
+	font-size:1.4em;
+	line-height:1.5em;
 	margin-top:0px;
+	margin-bottom:50px;
 }
 .choke {
 	max-width:660px;
@@ -130,7 +132,7 @@ body {
 .headline {
 	color: white;
 	text-transform: uppercase;
-	font-size:3em;
+	font-size:3.5em;
 	margin-bottom:20px;
 	&.red {
 		color: $red;
@@ -182,7 +184,7 @@ input[type="submit"].button {
 	background:white;
 	border-radius:6px;
 	padding:20px;
-	color:$gray;
+	color:#A0A0A0;
 	min-height:450px; //This will probably change
 	box-shadow: 0px 1px 3px 0px rgba(6,16,48,0.20);
 	img {
@@ -250,9 +252,9 @@ input[type="submit"].button {
 }
 	.cell-circle {
 		display:inline-block;
-		width:25px;
-		height:25px;
-		border:4px solid $red;
+		width:15px;
+		height:15px;
+		border:3px solid $red;
 		background:transparent;
 		border-radius:50%;
 		margin:0 5px;
@@ -407,12 +409,12 @@ input[type="submit"].button {
 .site-header {
 	background:$cream;
 	position:fixed;
-	top:0; left:0; width:100%;
+	top:0; left:0; width:100%; right:0;
 	z-index:5;
 	border-top:1px solid lighten($cream,5%);
 	box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.27);
 	transition: height 0.3s;
-	background: url('/wp-content/themes/thebespokeapparel-child/images/bespoke-pattern.png') repeat repeat;
+	background: url('/thebespokeapparel/wp-content/themes/thebespokeapparel-child/images/bespoke-pattern.png') repeat repeat;
 }
 .page {
 	padding-top:79px; //offset the fixed header
@@ -550,11 +552,14 @@ input[type="submit"].button {
 .footer {
 	background:#333;
 	color:white;
-	position:fixed;
+	/*position:fixed;*/
+	/*
 	bottom:0;
 	left:0;
 	right:0;
+	width:100%;
 	z-index:-1;
+	*/
 	height:200px;
 	.wrap {
 		padding-top:70px;
